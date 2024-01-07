@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { loginSchema } from "../../../schema/user.schema";
+import { loginSchema } from "../schema/user.schema";
 import { useAuth } from "../Context/auth.context";
 import instance from "../service/instance";
 import {  promiseToast } from "../utils/notifications";
@@ -100,7 +100,7 @@ export default function FormSignin() {
       />
       <button
         type="submit"
-        className="bg-primary w-[306px] h-[101px] rounded-full font-bold text-white absolute bottom-10"
+        className="bg-primary w-64 h-10 rounded-xl font-bold text-white"
       >
         Entrar
       </button>

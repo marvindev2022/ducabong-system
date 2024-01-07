@@ -6,8 +6,6 @@ import React, {
   useState,
   useEffect,
 } from "react";
-import { services } from "../../../data/services";
-import { products } from "../../../data/products";
 
 interface IContextProps {
   children: ReactNode;
@@ -24,6 +22,8 @@ export interface IProduct {
   description: string;
   countInStock: number;
 }
+const services: IService[] = [ ]
+const products: IProduct[] = [ ]
 
 interface ClientStates {
   dashboardRef: React.RefObject<HTMLDivElement>;
